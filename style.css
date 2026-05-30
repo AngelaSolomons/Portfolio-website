@@ -3,57 +3,78 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container {
-    width: 1280px;
-    margin: auto;
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: rgb(193, 141, 194);
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-list a {
+    text-decoration: none;
+    color: black;
+}
+.nav-list a:hover {
+    color: #007BFF;
+}
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    gap: 50px;
+}
+.hero-text {
+    flex: 1;
+}
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero-image {
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 99;
 }
-.main-head {
-    width: 100%;
-    height:54px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: transparent;
-    z-index: 9999;
+.hero-image img {
+    width: 350px;
+    border-radius: 50%;
 }
-.main-head .main-menu {
-    width: 100%;
-    height: 54px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+section {
+    min-height: 100vh;
+    padding: 6rem 10%;
 }
-.main-head .main-menu .logo {
-    font-size: 25px;
-    font-weight: 700;
-    color: #d22c2c;
+section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
 }
-.main-head .main-menu .nav-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+#about,
+#projects,
+#contact {
+    background: #add6eb;
 }
-.main-head .main-menu .nav-menu .nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.main-head .main-menu .nav-menu .nav-list .nav-item {
-list-style: none;
-padding: 15px 30px;
-}
-.main-head .main-menu .nav-menu .nav-list .nav-item .nav-link {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: #000000;
-    transition: all .1s ease-in-out;
-}
-.main-head .main-menu .nav-menu .nav-list .nav-item .nav-link:hover {
-    color: #9c1650;
+
+#skills,
+#gallery {
+    background: white;
 }
