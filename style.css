@@ -6,6 +6,11 @@
 html {
     scroll-behavior: smooth;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
 header {
     position: sticky;
     top: 0;
@@ -14,38 +19,43 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: rgb(193, 141, 194);
+    background-color:rgb(191, 43, 83);
 }
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color:rgb(142, 179, 65);
+    font-style: italic;
 }
 .nav-list {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
+
 .nav-list a {
     text-decoration: none;
-    color: black;
+    color:rgb(245, 233, 207);
 }
 .nav-list a:hover {
     color: #007BFF;
 }
-.hero {
+#hero {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
     gap: 50px;
+    background-color: rgb(142, 179, 65);
 }
 .hero-text {
     flex: 1;
 }
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 20px;
+    color: rgb(191, 43, 83)
 }
 .hero-text p {
     font-size: 1.2rem;
@@ -68,13 +78,28 @@ section h2 {
     margin-bottom: 2rem;
     font-size: 2.5rem;
 }
-#about,
-#projects,
-#contact {
-    background: #add6eb;
+#about{
+    background-color: rgb(191, 43, 83);
 }
-
-#skills,
-#gallery {
-    background: white;
+#skills{
+    background-color:rgb(245, 233, 207);
+}
+#projects{
+    background-color:rgb(191, 43, 83);
+}
+/* #gallery {
+    background: rgb(245, 233, 207);
+} */
+#contact {
+    background-color:rgb(142, 179, 65);
+}
+.footer {
+   height: 60px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   border-top: 5px solid black;
+   background-color: rgb(191, 43, 83);
+   color: rgb(245, 233, 207);
+   text-align: center;
 }
