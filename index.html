@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Personal Portfolio Website</title>
 </head>
 <body>
@@ -70,31 +71,31 @@
         <h2>Skills & Tools</h2>
         <div class="skills-wrapper">
             <div class="skill-card">
-                <span>🌐</span>
+                <i class="fa-solid fa-globe fa-xl" style="color: rgb(116, 192, 252);"></i>
                 <h3>Frontend</h3>
                 <p>HTML, CSS, JavaScript, Bootstrap</p>
             </div>
     
             <div class="skill-card">
-                <span>🐍</span>
+                <i class="fa-brands fa-python fa-2xl" style="color: #43c4a0;"></i>
                 <h3>Programming</h3>
                 <p>Python</p>
             </div>
     
             <div class="skill-card">
-                <span>🎨</span>
+                <i class="fa-solid fa-palette fa-xl" style="color: #ff8c00;"></i>
                 <h3>UI/UX Design</h3>
                 <p>Figma</p>
             </div>
     
             <div class="skill-card">
-                <span>🖌️</span>
+                <i class="fa-solid fa-paintbrush fa-xl" style="color: #f7c305;"></i>
                 <h3>Graphic Design</h3>
                 <p>Photoshop, Inkscape</p>
             </div>
     
             <div class="skill-card">
-                <span>🎬</span>
+                <i class="fa-solid fa-clapperboard fa-xl" style="color: rgb(177, 151, 252);"></i>
                 <h3>Video Editing</h3>
                 <p>Premiere Pro</p>
             </div>
@@ -103,34 +104,49 @@
 
     <!-- About Section -->
     <section id="about">
+        <div class="about-image">
+            <img src="./about-image.jpg" alt="Angela">
+        </div>
         <div class="about-text">
             <h2>About Me</h2>
-            <p>Hi,<br>I'm Angela Solomons</p>
-            <p>A beginner software developer exploring both front-end and back-end development.</p>
-            <p>Coming from a film production background, I enjoy combining creativity with technology to build engaging digital experiences.</p>
+            <p class="intro">Hi, I'm Angela Solomons!</p>
+            <p>A beginner software developer exploring both front-end and back-end development.</p><br>
+            <p>Coming from a film production background, I enjoy combining creativity with technology to build engaging digital experiences.</p><br>
             <p>I love colourful design, video games, and learning new skills, and this portfolio is a collection of the projects and technologies I've worked with as I continue to grow as a developer.</p>
         </div>
-        <div class="about-image">
-            <img src="./about-img.jpg" alt="Angela">
-        </div>
+        
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <label for="name"></label>
-            <input type="text" placeholder="Your Name" required>
-            <label for="email"></label>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+            <div class="wrap-1">
+                <p>Pop me a message!</p>
+            </div> 
+                <form>
+                    <label for="name"></label>
+                    <input type="text" placeholder="Your Name" required>
+                    <label for="email"></label>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
         <p>&copy; 2026 Angela Solomons. All rights reserved.</p>
+
+        <div class="socials">
+            <a href="https://github.com/AngelaSolomons?tab=repositories" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-square-github fa-xl" style="color: #8eb341;"></i>
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/angela-s-6b64681a1" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #8eb341;"></i>
+            </a>
+        </div>
     </footer>
 
 </div>

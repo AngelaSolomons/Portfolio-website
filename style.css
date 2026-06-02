@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Mouse Memoirs", san-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -24,6 +25,7 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
+    height: 3.5rem;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
@@ -35,7 +37,7 @@ header {
     color: rgb(142, 179, 65);
 }
 .logo {
-    font-size: 1.5rem;
+    font-size: 38px;
     font-weight: bold;
     color: rgb(245, 233, 207);
 }
@@ -47,6 +49,7 @@ header {
 .nav-list a {
     text-decoration: none;
     color:rgb(245, 233, 207);
+    font-size: 22px;
 }
 .nav-list a:hover {
     color: #007BFF;
@@ -65,15 +68,16 @@ header {
     flex: 1;
     max-width: 500px;
 }
-
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 1.1;
     margin-bottom: 1rem;
 }
-
+.hero-text h2 {
+    color: rgb(245, 233, 207);
+}
 .hero-text p {
-    font-size: 1.5rem;
+    font-size: 3.2rem;
     line-height: 1.5;
     margin-bottom: 2rem;
 }
@@ -100,7 +104,8 @@ header {
     border-radius: 40px;
     margin-bottom: 30px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 300;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
 }
 .btn:hover {
@@ -132,7 +137,7 @@ section h2 {
 }
 .about-text h3 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    
 }
 .about-text {
     font-family: "Mouse Memoirs", sans-serif;
@@ -140,23 +145,27 @@ section h2 {
     font-style: normal;
 }
 .about-text p {
-    font-size: 22px;
-    line-height: 1.8;
+    font-size: 25px;
+    line-height: 1.5;
     max-width: 600px;
     font-family: "Mouse Memoirs", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+.about-text .intro {
+    margin-bottom: 30px;
+}
 .about-image {
     flex: 1;
     display: flex;
     justify-content: center;
+    margin-top: 6rem;
 }
 .about-image img {
     width: 550px;
     max-width: 100%;
     border-radius: 25px;
-    border: 5px solid rgb(142, 179, 65);
+    border: 5px solid rgb(181, 0, 48);
 }
 #skills{
     color: rgb(191, 43, 83);
@@ -183,15 +192,12 @@ section h2 {
     transform: translateY(-5px);
     box-shadow: 8px 8px 0 rgb(191, 43, 83);
 }
-.skill-card span {
-    font-size: 2rem;
-}
 .skill-card h3 {
     margin: 0.5rem 0;
     font-size: 1rem;
 }
 .skill-card p {
-    font-size: 0.85rem;
+    font-size: 20px;
 }
 #projects{
     color: rgb(245, 233, 207);
@@ -226,7 +232,7 @@ section h2 {
 }
 .project-card p {
     padding: 0 1.5rem 1.5rem;
-    font-size: 1rem;
+    font-size: 20px;
     line-height: 1.6;
     color: rgb(191, 43, 83);
 }
@@ -279,8 +285,7 @@ section h2 {
     transform: translateY(0);
 }
 .footer {
-   height: 60px;
-   width: 100%;
+   min-height: 80px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -288,6 +293,24 @@ section h2 {
    color: rgb(245, 233, 207);
    text-align: center;
 }
+.footer p {
+    font-size: 2rem;
+}
+.socials {
+    display: flex;
+    gap: 0px;
+}
+.socials a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    padding: 9px;
+}
+.socials a:first-child {
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
