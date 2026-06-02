@@ -1,3 +1,6 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Mouse+Memoirs&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +12,12 @@ html {
 .container {
     display: flex;
     flex-direction: column;
-    
+}
+.logo,
+h1,
+h2,
+h3 {
+    font-family: "Chango", sans-serif;
 }
 header {
     position: sticky;
@@ -20,19 +28,22 @@ header {
     align-items: center;
     padding: 1rem 5%;
     background-color:rgb(191, 43, 83);
+    font-weight: 400;
+    font-style: normal;
+}
+.active {
+    color: rgb(142, 179, 65);
 }
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(245, 233, 207);
-    font-style: italic;
 }
 .nav-list {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
-
 .nav-list a {
     text-decoration: none;
     color:rgb(245, 233, 207);
@@ -47,32 +58,35 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    gap: 50px;
+    gap: 40px;
     background-color: rgb(142, 179, 65);
 }
 .hero-text {
     flex: 1;
+    max-width: 500px;
 }
+
 .hero-text h1 {
-    font-size: 5rem;
-    margin-bottom: 20px;
-    color: rgb(191, 43, 83)
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
 }
+
 .hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
 }
 .hero-image {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 .hero-image img {
     border: none;
     outline: none;
     box-shadow: none;
     width: 500px;
-    
     height: auto;
 }
 .btn {
@@ -83,7 +97,8 @@ header {
     background: rgb(191, 43, 83);
     color: rgb(245, 233, 207);
     border: 2px solid rgb(191, 43, 83);
-    border-radius: 50px;
+    border-radius: 40px;
+    margin-bottom: 30px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -103,24 +118,34 @@ section h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #about {
     color: rgb(245, 233, 207);
     background-color: rgb(191, 43, 83);
-    min-height: 100vh;
-    padding: 6rem 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
 }
+.about-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
 .about-text {
-    flex: 1;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 22px;
     line-height: 1.8;
     max-width: 600px;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .about-image {
     flex: 1;
@@ -128,7 +153,7 @@ section h2 {
     justify-content: center;
 }
 .about-image img {
-    width: 350px;
+    width: 550px;
     max-width: 100%;
     border-radius: 25px;
     border: 5px solid rgb(142, 179, 65);
@@ -146,40 +171,30 @@ section h2 {
 .skill-card {
     min-width: 180px;
     max-width: 200px;
-
     padding: 1.25rem;
-
     background: white;
     border: 4px solid rgb(191, 43, 83);
     border-radius: 20px;
-
     text-align: center;
-
     box-shadow: 6px 6px 0 rgb(191, 43, 83);
-
     transition: 0.3s ease;
 }
-
 .skill-card:hover {
     transform: translateY(-5px);
-
     box-shadow: 8px 8px 0 rgb(191, 43, 83);
 }
-
 .skill-card span {
     font-size: 2rem;
 }
-
 .skill-card h3 {
     margin: 0.5rem 0;
     font-size: 1rem;
 }
-
 .skill-card p {
     font-size: 0.85rem;
 }
 #projects{
-    color: rgb(191, 43, 83);
+    color: rgb(245, 233, 207);
     background-color:rgb(191, 43, 83);
 }
 .projects-grid {
@@ -194,11 +209,11 @@ section h2 {
     border: 4px solid rgb(191, 43, 83);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 6px 6px 0 rgb(191, 43, 83);
     transition: 0.3s ease;
 }
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 6px 6px 0 rgb(181, 0, 48);
 }
 .project-card img {
     width: 100%;
@@ -213,14 +228,12 @@ section h2 {
     padding: 0 1.5rem 1.5rem;
     font-size: 1rem;
     line-height: 1.6;
+    color: rgb(191, 43, 83);
 }
-#contact {
-    background-color:rgb(142, 179, 65);
-}
+/* Contact Section */
 #contact {
     color: rgb(191, 43, 83);
-    min-height: 100vh;
-    padding: 6rem 10%;
+    background-color:rgb(142, 179, 65);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,7 +243,6 @@ section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
-/* Form Container */
 #contact form {
     width: 100%;
     max-width: 600px;
@@ -238,7 +250,6 @@ section h2 {
     flex-direction: column;
     gap: 1rem;
 }
-/* Inputs & Textarea */
 #contact input,
 #contact textarea {
     width: 100%;
@@ -255,51 +266,6 @@ section h2 {
     min-height: 180px;
     resize: vertical;
 }
-/* Focus State */
-#contact input:focus,
-#contact textarea:focus {
-    border-color: rgb(191, 43, 83);
-    box-shadow: 0 0 0 4px rgba(210, 44, 44, 0.15);
-}
-/* Submit Button */
-#contact {
-    min-height: 100vh;
-    padding: 6rem 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-/* Form Container */
-#contact form {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-/* Inputs & Textarea */
-#contact input,
-#contact textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: inherit;
-    outline: none;
-    transition: border-color 0.3s ease,
-                box-shadow 0.3s ease;
-}
-#contact textarea {
-    min-height: 180px;
-    resize: vertical;
-}
-/* Focus State */
 #contact input:focus,
 #contact textarea:focus {
     border-color: rgb(191, 43, 83);
@@ -314,8 +280,6 @@ section h2 {
 }
 .footer {
    height: 60px;
-   left: 0;
-   bottom: 0;
    width: 100%;
    display: flex;
    justify-content: center;
@@ -323,4 +287,23 @@ section h2 {
    background-color: rgb(191, 43, 83);
    color: rgb(245, 233, 207);
    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        justify-content: center;
+    }
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image {
+        justify-content: center;
+    }
 }

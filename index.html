@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="container">
+    
     <header class="main-head">
 
             <!-- Logo Section-->
@@ -17,11 +18,10 @@
             <!-- Navbar Section -->
             <nav class="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a itemid="active" href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                    <!-- <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li> -->
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -30,12 +30,14 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-text">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Welcome</h1>
+            <h3>to my</h3>
+            <h2>Portfolio</h2>
             <p>Discover my work and skills</p>
             <a href="#projects" class="btn">View Projects</a>
         </div>
         <div class="hero-image">
-            <img src="./Frame 1 (2).svg" alt="hero-image"></a>
+            <img src="./Frame 1 (2).svg" alt="hero-image">
         </div>
     </section>
 
@@ -43,14 +45,13 @@
     <section id="about">
         <div class="about-text">
             <h2>About Me</h2>
-            <h3>Hi, I'm Angela Solomons</h3>
-            <p>a beginner software developer exploring both front-end and back-end development. Coming from a film production background, I enjoy combining creativity with technology to build engaging digital experiences.
-
-I love colourful design, video games, and learning new skills, and this portfolio is a collection of the projects and technologies I'm working with as I grow as a developer.</p>
+            <p>Hi,<br>I'm Angela Solomons</p>
+            <p>A beginner software developer exploring both front-end and back-end development.</p>
+            <p>Coming from a film production background, I enjoy combining creativity with technology to build engaging digital experiences.</p>
+            <p>I love colourful design, video games, and learning new skills, and this portfolio is a collection of the projects and technologies I've worked with as I continue to grow as a developer.</p>
         </div>
-    
         <div class="about-image">
-            <img src="your-photo.jpg" alt="Angela">
+            <img src="./about-img.jpg" alt="Angela">
         </div>
     </section>
 
@@ -58,83 +59,67 @@ I love colourful design, video games, and learning new skills, and this portfoli
     <section id="skills">
         <h2>Skills & Tools</h2>
         <div class="skills-wrapper">
+            <div class="skill-card">
+                <span>🌐</span>
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, Bootstrap</p>
+            </div>
     
             <div class="skill-card">
-        <span>🌐</span>
-        <h3>Frontend</h3>
-        <p>HTML, CSS, JavaScript, Bootstrap</p>
-    </div>
-
-    <div class="skill-card">
-        <span>🐍</span>
-        <h3>Programming</h3>
-        <p>Python</p>
-    </div>
-
-    <div class="skill-card">
-        <span>🎨</span>
-        <h3>UI/UX Design</h3>
-        <p>Figma</p>
-    </div>
-
-    <div class="skill-card">
-        <span>🖌️</span>
-        <h3>Graphic Design</h3>
-        <p>Photoshop, Inkscape</p>
-    </div>
-
-    <div class="skill-card">
-        <span>🎬</span>
-        <h3>Video Editing</h3>
-        <p>Premiere Pro</p>
-    </div>
-
+                <span>🐍</span>
+                <h3>Programming</h3>
+                <p>Python</p>
+            </div>
     
+            <div class="skill-card">
+                <span>🎨</span>
+                <h3>UI/UX Design</h3>
+                <p>Figma</p>
+            </div>
+    
+            <div class="skill-card">
+                <span>🖌️</span>
+                <h3>Graphic Design</h3>
+                <p>Photoshop, Inkscape</p>
+            </div>
+    
+            <div class="skill-card">
+                <span>🎬</span>
+                <h3>Video Editing</h3>
+                <p>Premiere Pro</p>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <img src="https://i.ibb.co/zT4vyw24/Screenshot-2026-06-01-223353.png" alt="hero-section"></a>
-            <h3>Responsive Hero Section</h3>
-            <p>A responsive hero component built with HTML and CSS.</p>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://i.ibb.co/zT4vyw24/Screenshot-2026-06-01-223353.png" alt="hero-section">
+                <h3>Responsive Hero Section</h3>
+                <p>A responsive hero component built with HTML and CSS.</p>
+            </div>
+    
+            <div class="project-card">
+                <img src="https://i.ibb.co/whNd3LVS/Screenshot-2026-06-01-223657.png" alt="product-cards">
+                <h3>Product Cards</h3>
+                <p>Product card layouts built with HTML and Bootstrap.</p>
+            </div>
+    
+            <div class="project-card">
+                <img src="https://i.ibb.co/216TPkQj/Screenshot-2026-06-01-222944.png" alt="filterable-gallery">
+                <h3>Filterable Gallery</h3>
+                <p>An interactive image gallery built with HTML and CSS.</p>
+            </div>
         </div>
-
-        <div class="project-card">
-            <img src="https://i.ibb.co/whNd3LVS/Screenshot-2026-06-01-223657.png" alt="product-cards"></a>
-            <h3>Product Cards</h3>
-            <p>Product card layouts with hover effects and clean styling.</p>
-        </div>
-
-        <div class="project-card">
-            <img src="https://i.ibb.co/216TPkQj/Screenshot-2026-06-01-222944.png" alt="filterable-gallery"></a>
-            <h3>Filterable Gallery</h3>
-            <p>An interactive image gallery built with JavaScript.</p>
-        </div>
-
-    </div>
-</section>
-
-    <!-- Gallery Section
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-item">
-            <img src="stand-in.jpg" alt="gallery-image">
-        </div>
-        <div class="gallery-item">
-            <img src="stand-in.jpg" alt="gallery-image">
-        </div>
-    </section>                 -->
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form>
+            <label for="name">Name</label>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
@@ -146,6 +131,7 @@ I love colourful design, video games, and learning new skills, and this portfoli
     <footer class="footer">
         <p>&copy; 2026 Angela Solomons. All rights reserved.</p>
     </footer>
+
 </div>
 </body>
 </html>          
