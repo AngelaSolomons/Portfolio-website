@@ -108,8 +108,8 @@ header {
     transition: all 0.3s ease;
 }
 .btn:hover {
-    background: transparent;
     color: rgb(191, 43, 83);
+    background-color: rgb(245, 233, 207);
 }
 .hero-text .btn {
     margin-top: 1rem;
