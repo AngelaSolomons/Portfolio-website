@@ -123,16 +123,22 @@
             <div class="wrap-1">
                 <p>Pop me a message!</p>
             </div> 
-                <form>
-                    <label for="name"></label>
-                    <input type="text" placeholder="Your Name" required>
-                    <label for="email"></label>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
+                <form action="https://formspree.io/f/xlgkrwya" method="POST">
+                    <label>
+                        <input name="name" type="text" placeholder="Your Name" required>
+                    </label>
+                    <label>
+                        <input name="email" type="email" placeholder="Your Email" required>
+                    </label>
+                    <label>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </label>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
     </section>
 
+
+    
     <!-- Footer Section -->
     <footer class="footer">
         <p>&copy; 2026 Angela Solomons. All rights reserved.</p>
