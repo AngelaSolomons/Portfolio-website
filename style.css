@@ -33,9 +33,6 @@ header {
     font-weight: 400;
     font-style: normal;
 }
-.active {
-    color: rgb(142, 179, 65);
-}
 .logo {
     font-size: 38px;
     font-weight: bold;
@@ -43,7 +40,9 @@ header {
 }
 .nav-list {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     list-style: none;
 }
 .nav-list a {
@@ -51,8 +50,8 @@ header {
     color:rgb(245, 233, 207);
     font-size: 22px;
 }
-.nav-list a:hover {
-    color: #007BFF;
+.nav-item a:hover {
+    border-bottom: 3px solid rgb(142, 179, 65);
 }
 #hero {
     color: rgb(191, 43, 83);
@@ -249,6 +248,10 @@ section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
 #contact form {
     width: 100%;
     max-width: 600px;
@@ -314,12 +317,23 @@ section h2 {
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .logo {
+        margin-bottom: 1rem;
     }
     #hero {
         flex-direction: column;
         text-align: center;
     }
+    #hero h1 {
+        margin-top: 1rem;
+    }
     .hero-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
         justify-content: center;
     }
     #about {
