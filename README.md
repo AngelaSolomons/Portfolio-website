@@ -33,11 +33,18 @@ My website features:
 - **Google Fonts**
 - **Formspree**
 
+
 ## How to View the Project
 ### Steps:
-1. Download or clone the repository
-2. Open the index.html file in any modern web browser
-3. View the website.
+1. **Download the repository** - https://github.com/AngelaSolomons/Portfolio-website.git
+   - Click on the link above or go to the repository
+   - Click the "Code" button
+   - Download as a ZIP file
+2. **Extract or unzip the ZIP file**
+3. **Inside the folder, look for a file called index.html**
+4. **Open the index.html file in any modern web browser**
+5. **View the website**
+
 
 ## Screenshots
 ### Home
@@ -92,17 +99,19 @@ Indicates the end of the webpage, while also containing external links for my Gi
 ### Responsive Design
 The website includes media queries to improve usability on tablets and mobile devices.
 
-
 **Example  of Mobile Responsiveness:**
 <p align="center">
   <img src="https://i.ibb.co/S4cmpzVh/mobile-view.png" alt="mobile view" width="600">
 </p>
 
+
 ## Challenges I faced
 One of the main challenges was making the layout responsive across different screen sizes, especially in sections with side-by-side content. Aligning elements properly while keeping the design consistent took multiple adjustments and testing.
 
+
 ## What I learned
 I believe I improved my skills in layout design, responsiveness, and structuring a full multi-section website from scratch.
+
 
 ## Future Improvements
 - Add JavaScript interactivity
@@ -112,12 +121,15 @@ I believe I improved my skills in layout design, responsiveness, and structuring
 - Improve accessibility
 - Add animations and transitions
 
+
 ## Author
 **Angela Solomons**
+
 
 ## Socials
 - **GitHub**: https://github.com/AngelaSolomons
 - **LinkedIn**: https://www.linkedin.com/in/angela-s-6b64681a1
+
 
 ## Project Reflection
 This project helped me build confidence in structuring a full website using HTML and CSS. It also improved my understanding of layout design, responsiveness, and how different sections work together. I also realised that I need to do more research and practice different page layouts because I will automatically try to center everything.
