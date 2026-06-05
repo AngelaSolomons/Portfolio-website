@@ -7,6 +7,10 @@
     box-sizing: border-box;
     font-family: "Mouse Memoirs", san-serif;
 }
+html,
+body {
+    overflow-x: hidden;
+}
 html {
     scroll-behavior: smooth;
 }
