@@ -1,4 +1,4 @@
-# HTML-CSS-PORTFOLIO
+# Portfolio Website
 
 ## Overview
 This **Personal Portfolio** website was built using HTML and CSS. The website showcases my projects, skills, background, and contact information in a colourful and responsive design.
